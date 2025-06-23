@@ -1,5 +1,16 @@
---- x.c
-+++ x.c
+From 8dcdc4b21a73268e167d98aa30f24315c7f3b7ff Mon Sep 17 00:00:00 2001
+From: Bakkeby <bakkeby@gmail.com>
+Date: Mon, 18 Jul 2022 16:52:03 +0200
+Subject: [PATCH] Adding anysize patch
+
+---
+ x.c | 56 ++++++++++++++++++++++++++++++--------------------------
+ 1 file changed, 30 insertions(+), 26 deletions(-)
+
+diff --git a/x.c b/x.c
+index 2a3bd38..f534347 100644
+--- a/x.c
++++ b/x.c
 @@ -81,6 +81,7 @@ typedef XftGlyphFontSpec GlyphFontSpec;
  typedef struct {
  	int tw, th; /* tty width and height */
@@ -148,3 +159,6 @@
  				win.cw, 1);
  	}
  }
+-- 
+2.37.1
+
